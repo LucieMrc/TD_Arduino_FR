@@ -1,5 +1,7 @@
 # TD_Arduino_FR
 
+*[english version](https://github.com/LucieMrc/TD_Arduino_EN)*
+
 **Ou comment créer une communication Serial entre Touchdesigner et Arduino**
 
 - Le tuto [introduction à Touchdesigner](https://github.com/LucieMrc/IntroTD_FR)
@@ -123,7 +125,7 @@ On garde le moniteur série fermé dans l'IDE Arduino pour que le port soit libr
 
 ![screen de Touch](./images/screen8.png)
 
-Dans Touchdesigner, on crée un `Serial` DAT, et comme pour la réception de donnée on choisit le port à laquelle est connectée l'Arduino.
+Dans Touchdesigner, on crée un `Serial` DAT, et comme pour la réception de donnée, on choisit le port à laquelle est connectée l'Arduino.
 
 Pour envoyer par exemple la valeur d'un slider, on crée un `Slider` COMP connecté à un `Null` CHOP.
 
@@ -144,7 +146,7 @@ Les arguments des fonctions sont définis comme :
 - val - the numeric value of the changed sample
 - prev - the previous sample value
 
-On fait glisser le `null1` CHOP sur le CHOP Execute afin que ce soit celui là qui est "écouté" (son nom apparaît dans le paramètres "CHOPs").
+On fait glisser le `null1` CHOP sur le CHOP Execute afin que ce soit celui là qui est "écouté" (son nom apparaît dans le paramètre "CHOPs").
 
 On coche le paramètre "Value Change" afin que ce soit cette fonction qui s'exécute, car on veux envoyer la valeur du slider dès qu'elle change. 
 
@@ -157,4 +159,4 @@ En écrivant ``op('serial1').send(val,  terminator='\r\n')`` dans la fonction va
 ![screen de Touch](./images/screen11.png)
 
 # Aller + loin
-
+...
